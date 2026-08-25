@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade - AutomBot Security</title>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 24px;
+    line-height: 1.65;
+    color: #1f2937;
+    background: #ffffff;
+}
+h1, h2 {
+    color: #0b1627;
+}
+h1 {
+    margin-bottom: 6px;
+}
+.meta {
+    color: #5f6b7a;
+    margin-bottom: 28px;
+}
+a {
+    color: #0969da;
+}
+.notice {
+    background: #f4f8fc;
+    border-left: 4px solid #29a8d8;
+    padding: 14px 16px;
+    margin: 20px 0;
+}
+code {
+    background: #f3f4f6;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidade — AutomBot Security</h1>
+<p class="meta"><strong>Última atualização:</strong> 25 de agosto de 2026</p>
+
+<p>Esta Política de Privacidade descreve como o aplicativo <strong>AutomBot Security</strong> trata informações quando é instalado e utilizado para proteção de um dispositivo Android. O aplicativo foi projetado para ser configurado pelo proprietário do aparelho ou por pessoa legalmente autorizada a administrá-lo.</p>
+
+<div class="notice">
+<strong>Importante:</strong> determinadas funções de segurança podem registrar fotos, vídeos, áudio, localização e dados técnicos do aparelho quando ocorrer um evento de segurança configurado pelo usuário. Esses recursos devem ser utilizados somente em dispositivos próprios ou sob administração autorizada e de acordo com a legislação aplicável.
+</div>
+
+<h2>1. Informações que o aplicativo pode tratar</h2>
+<p>Dependendo das funções habilitadas pelo usuário, o AutomBot Security pode tratar as seguintes informações:</p>
+<ul>
+<li><strong>Câmera:</strong> fotos e vídeos capturados em eventos de segurança.</li>
+<li><strong>Microfone:</strong> gravações de áudio associadas a um evento de segurança, quando esse recurso estiver habilitado.</li>
+<li><strong>Localização:</strong> coordenadas aproximadas ou precisas disponíveis no aparelho no momento do evento.</li>
+<li><strong>Informações do dispositivo:</strong> fabricante, modelo, versão do Android, versão do aplicativo, estado da bateria e tipo de conexão de rede.</li>
+<li><strong>Informações de segurança:</strong> quantidade de tentativas incorretas de desbloqueio detectadas pelos recursos administrativos do Android, quando disponíveis.</li>
+<li><strong>Endereço de e-mail:</strong> endereço escolhido pelo usuário para receber alertas e, quando o Gmail for conectado, o endereço da Conta Google autorizada.</li>
+<li><strong>Dados de autenticação Google:</strong> autorização OAuth necessária para utilizar a Gmail API. O aplicativo não solicita nem armazena a senha da Conta Google.</li>
+</ul>
+
+<h2>2. Finalidade do tratamento</h2>
+<p>As informações são utilizadas exclusivamente para funções relacionadas à proteção do dispositivo, incluindo:</p>
+<ul>
+<li>registrar evidências de um evento de segurança;</li>
+<li>identificar o dispositivo e o horário do evento;</li>
+<li>obter a localização disponível do aparelho;</li>
+<li>enviar alertas e evidências ao endereço de e-mail configurado pelo proprietário;</li>
+<li>manter temporariamente uma fila local de alertas quando o aparelho estiver sem conexão;</li>
+<li>reenviar automaticamente alertas pendentes quando a conexão com a internet for restabelecida;</li>
+<li>manter histórico local de eventos para fins de segurança e diagnóstico.</li>
+</ul>
+
+<h2>3. Uso da Conta Google e Gmail API</h2>
+<p>O AutomBot Security pode permitir que o usuário conecte uma Conta Google por meio do fluxo oficial de autenticação OAuth do Google.</p>
+<p>Quando autorizado, o aplicativo solicita somente os escopos necessários ao recurso disponibilizado, incluindo o escopo <code>https://www.googleapis.com/auth/gmail.send</code> para envio de mensagens.</p>
+<ul>
+<li>O aplicativo <strong>não lê</strong> a caixa de entrada do Gmail.</li>
+<li>O aplicativo <strong>não acessa</strong> mensagens recebidas, contatos ou histórico de e-mails.</li>
+<li>O aplicativo utiliza a autorização do Gmail somente para enviar alertas de segurança solicitados pela funcionalidade do app.</li>
+<li>A senha da Conta Google não é fornecida ao AutomBot Security.</li>
+</ul>
+<p>O uso e a transferência para qualquer outro aplicativo das informações recebidas das APIs do Google observarão a <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+
+<h2>4. Armazenamento local e fila offline</h2>
+<p>Quando um evento ocorre sem conexão com a internet, o AutomBot Security pode armazenar temporariamente, na área privada do aplicativo no Android, as evidências e os dados necessários para concluir o envio posteriormente.</p>
+<p>Os arquivos de mídia associados a uma fila pendente são mantidos enquanto o envio não for confirmado. Após uma entrega confirmada, o aplicativo pode remover os arquivos de evidência que estavam guardados para esse envio.</p>
+<p>Registros técnicos e histórico local de incidentes podem permanecer no armazenamento privado do aplicativo até serem removidos pelo próprio funcionamento do app, pela limpeza dos dados do aplicativo, pela desinstalação ou pela restauração de fábrica do dispositivo.</p>
+
+<h2>5. Compartilhamento de informações</h2>
+<p>O AutomBot Security não vende dados pessoais.</p>
+<p>As informações podem ser transmitidas somente quando necessário para executar as funções escolhidas pelo usuário, como:</p>
+<ul>
+<li><strong>Google / Gmail API:</strong> para autenticação e envio de alertas por e-mail.</li>
+<li><strong>Provedor de e-mail de contingência:</strong> quando configurado no aplicativo para envio por SMTP seguro.</li>
+<li><strong>Serviços de localização do Android/Google Play Services:</strong> para obtenção da localização disponível do dispositivo.</li>
+<li><strong>Destinatário configurado pelo usuário:</strong> o e-mail de alerta pode conter dados técnicos, localização e arquivos de evidência capturados durante o evento de segurança.</li>
+</ul>
+
+<h2>6. Permissões utilizadas</h2>
+<p>Conforme a configuração e a versão do Android, o aplicativo pode solicitar permissões como:</p>
+<ul>
+<li>Câmera;</li>
+<li>Microfone;</li>
+<li>Localização aproximada e/ou precisa;</li>
+<li>Localização em segundo plano, quando necessária e permitida pelo Android;</li>
+<li>Notificações;</li>
+<li>Execução de serviço em primeiro plano;</li>
+<li>Inicialização após reinício do aparelho;</li>
+<li>Administrador do dispositivo, quando ativado voluntariamente pelo usuário.</li>
+</ul>
+<p>O usuário pode revisar permissões nas configurações do Android. A revogação de uma permissão pode impedir o funcionamento da respectiva função de segurança.</p>
+
+<h2>7. Segurança das informações</h2>
+<p>O aplicativo utiliza mecanismos fornecidos pelo Android para manter dados locais na área privada do aplicativo. Comunicações com serviços do Google utilizam conexões seguras fornecidas pelas respectivas APIs. O envio por SMTP de contingência, quando utilizado, é configurado para conexão protegida por SSL/TLS.</p>
+<p>Apesar das medidas adotadas, nenhum método de armazenamento ou transmissão eletrônica pode garantir segurança absoluta.</p>
+
+<h2>8. Retenção e exclusão</h2>
+<p>O AutomBot Security procura manter dados somente pelo período necessário à finalidade de segurança correspondente.</p>
+<ul>
+<li>Evidências pendentes podem permanecer localmente até a confirmação do envio.</li>
+<li>Após envio confirmado, arquivos temporários associados à fila podem ser excluídos.</li>
+<li>Dados armazenados no espaço privado do aplicativo são removidos quando o usuário limpa os dados do app, desinstala o aplicativo ou realiza uma restauração de fábrica, ressalvadas cópias já enviadas ao endereço de e-mail configurado.</li>
+<li>Mensagens já enviadas passam a estar sujeitas às regras de retenção da conta de e-mail que as recebeu.</li>
+</ul>
+
+<h2>9. Controle sobre a Conta Google</h2>
+<p>O usuário pode revogar o acesso concedido ao AutomBot Security a qualquer momento nas configurações de segurança da própria Conta Google. Após a revogação, os recursos que dependem da Gmail API deixarão de funcionar até uma nova autorização.</p>
+<p>Mais informações sobre privacidade do Google estão disponíveis em <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.</p>
+
+<h2>10. Direitos do titular e LGPD</h2>
+<p>Quando aplicável, o tratamento de dados pessoais observa os princípios da Lei Geral de Proteção de Dados Pessoais — LGPD (Lei nº 13.709/2018). O titular pode solicitar informações sobre o tratamento, correção ou exclusão de dados que estejam sob controle do responsável pelo aplicativo, observadas as limitações técnicas e legais.</p>
+<p>Como grande parte das informações permanece localmente no dispositivo ou é enviada diretamente ao endereço de e-mail configurado pelo usuário, o próprio titular também pode exercer controle por meio das configurações do Android, limpeza dos dados do aplicativo, desinstalação, revogação das permissões e revogação do acesso Google.</p>
+
+<h2>11. Crianças e adolescentes</h2>
+<p>O AutomBot Security não é direcionado especificamente a crianças. Quando instalado em dispositivo pertencente a menor de idade ou administrado para esse fim, o responsável deve observar a legislação aplicável e assegurar as autorizações necessárias.</p>
+
+<h2>12. Uso responsável</h2>
+<p>O AutomBot Security é destinado à proteção de aparelhos próprios ou legitimamente administrados. O usuário é responsável por utilizar funções de câmera, microfone, localização e administração do dispositivo de forma lícita, proporcional e compatível com os direitos de terceiros.</p>
+
+<h2>13. Alterações desta política</h2>
+<p>Esta Política de Privacidade pode ser atualizada para refletir novas funcionalidades, alterações legais ou mudanças nos serviços utilizados. A versão mais recente será publicada nesta página com a respectiva data de atualização.</p>
+
+<h2>14. Contato</h2>
+<p>Para dúvidas sobre esta Política de Privacidade ou sobre o tratamento de dados no AutomBot Security:</p>
+<ul>
+<li><strong>Site:</strong> <a href="https://autombot.com.br" target="_blank" rel="noopener noreferrer">https://autombot.com.br</a></li>
+<li><strong>E-mail:</strong> semplicioalvesbispo1994@gmail.com</li>
+</ul>
+
+</body>
+</html>
